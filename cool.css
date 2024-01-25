@@ -1,0 +1,114 @@
+body {
+  background-color: #d49090;
+  text-align: center;
+  /*Sætter baggrundsfarven for hele siden til en lyserød nuance (#d49090).
+Centrerer teksten på siden. */
+}
+
+button {
+  background-color: #d49090;
+  outline: none;
+  /*Sætter baggrundsfarven for knapper til samme lyserøde nuance.
+Fjerner den blå fokusramme (outline) omkring knapper ved fokus.*/
+}
+
+h2 {
+  margin-bottom: 10px;
+  /*Tilføjer en bundmargin på 10px til headder2.
+*/
+}
+
+.btn {
+  margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  /*Tilføjer en bundmargin på 10px til elementer med klassen "btn".
+Centrerer knapper ved at anvende margin-left og margin-right til "auto".
+Gør knapper til blok-elementer, hvilket betyder, at de vil starte på en ny linje og fylde hele bredden.*/
+}
+
+input {
+  width: 100%;
+  padding: 5px 14px;
+  border: 2px solid #f0edea;
+  margin-bottom: 10px;
+  background-color: #61504b;
+  outline: none;
+  color: #fff;
+  font-size: 14px;
+  /*
+Sætter bredden af inputfelter til 100% af deres container.
+Tilføjer polstring (padding) til inputfelter.
+Sætter en 2px solid grænse omkring inputfelter.
+Tilføjer bundmargin på 10px.
+Sætter baggrundsfarven til en mørkebrun nuance (#61504b).
+Fjerner den blå fokusramme (outline) omkring inputfelter ved fokus.
+Sætter tekstfarven til hvid.
+Sætter skriftstørrelsen til 14px.
+*/
+}
+
+input:focus {
+  border: 2px solid #61504b;
+  ;
+  background-color: #61504b;
+  /*Ændrer udseendet af inputfelter ved fokus (når de er aktive).
+*/
+}
+
+form {
+  background-color: #edd6d6;
+  padding: 20px;
+  color: #000;
+  box-shadow: 0 2px 4px 0 #201f1d;
+  /* Sætter baggrundsfarven for formularelementer til en lyserød nuance (#edd6d6).
+Tilføjer polstring på 20px.
+Sætter tekstfarven til sort.
+Tilføjer en skygge omkring formularelementerne.
+*/
+}
+
+form p {
+  margin-bottom: 5px;
+  /* Tilføjer bundmargin på 5px til alle paragraf-elementer inden for formularelementet. 
+  */
+}
+
+form p:nth-child(1){
+  margin-top: 0;
+  /* Fjerner topmargin fra det første paragraf-element inden for formularelementet.
+*/
+}
+
+.panel {
+  margin-top: 20px;
+  float: none;
+  /* Tilføjer topmargin på 20px til panel-elementet.
+Nulstiller float-egenskaben (hvis den tidligere var sat til andet end "none").
+*/
+}
+
+/*Responsivt design ved brug af medieforespørgsler (Media Queries):
+*/ 
+
+@media (min-width: 768px) {
+  .panel {
+      width: 50%;
+      margin-left: auto;
+      margin-right: auto;
+  }
+  /* Ved skærmstørrelser, der er 768px eller bredere, vil .panel
+   have en bredde på 50%, og den vil være centreret ved hjælp af margin-left og margin-right */
+}
+
+@media (min-width: 1024px) {
+  .panel {
+      width: 30%;
+      margin-left: auto;
+      margin-right: auto;
+  }
+  /* Ved skærmstørrelser, der er 1024px eller bredere, vil .panel
+   have en bredde på 30%, og den vil være centreret på samme måde som ovenfor.
+  */
+}

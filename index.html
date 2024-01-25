@@ -1,0 +1,30 @@
+<html>
+<head>
+	<title>BMI Udregner</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+	<link rel="stylesheet" href="cool.css">
+</head>
+<body>
+    <div class="container">
+    	<div class="panel">
+    		<h2 class="text-center">Tjek din BMI</h2>
+    		
+    			<p id="introText" class="text-center">Skriv din højde og din vægt for at udregne din BMI</p>
+    			
+    			<form>
+    				<div id="vægtInput">
+    					<p>Skriv din vægt her (KG)</p>
+    		     		<input id="vægt" type="number" pattern="[0-9]*" name="a" />
+    				</div>
+    				<div id="højdeInput">
+    					<p>Og skriv din højde her (CM)</p>
+	    				 <input id="højde" type="number" pattern="[0-9]*" name="b"/> 
+    				</div>
+    		     <button type="button" class="btn" onclick="udregnBmi()">Udregn BMI</button>
+    		</form>
+    		<div id="results" class="text-center">Du vil se din BMI her :)</div>
+    	</div>
+    </div>
+	<script src="ssh.js"></script>
+</body>
+</html>
